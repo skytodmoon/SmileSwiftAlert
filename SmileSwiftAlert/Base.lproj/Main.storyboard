@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmileSwiftAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsS-Ck-rsD">
+                                <rect key="frame" x="46" y="308" width="283" height="50"/>
+                                <color key="backgroundColor" red="0.16984953703703703" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0rW-cj-ZSl"/>
+                                </constraints>
+                                <state key="normal" title="AlertClick"/>
+                                <connections>
+                                    <action selector="AlertBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMh-Ut-XVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-eO-F5c">
+                                <rect key="frame" x="46" y="388" width="283" height="50"/>
+                                <color key="backgroundColor" red="0.34146412037037038" green="0.36108217592592595" blue="0.78052662037037035" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jk7-Pw-Sfg"/>
+                                </constraints>
+                                <state key="normal" title="SheetClick">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SheetBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnw-yS-sog"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-at-lpQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-dy-0q4">
+                                <rect key="frame" x="46" y="465" width="283" height="50"/>
+                                <color key="backgroundColor" red="0.73255208333333333" green="0.087384259259259259" blue="0.78052662039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2SQ-fh-nfr"/>
+                                </constraints>
+                                <state key="normal" title="NotificationShow">
+                                    <color key="titleColor" red="0.67783564814814812" green="0.85737847222222219" blue="0.72526041666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="NotificationShowClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV3-It-pxY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.13729745370370369" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DLN-at-lpQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2pQ-g9-ma7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0gb-eO-F5c" secondAttribute="trailing" constant="30" id="My7-JT-l6g"/>
+                            <constraint firstItem="DLN-at-lpQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P8T-ns-B7C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YD3-dy-0q4" secondAttribute="trailing" constant="30" id="P8Z-9D-QzJ"/>
+                            <constraint firstItem="0gb-eO-F5c" firstAttribute="top" secondItem="tsS-Ck-rsD" secondAttribute="bottom" constant="30" id="RgS-Gt-bpc"/>
+                            <constraint firstItem="tsS-Ck-rsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="US0-gr-Fnj"/>
+                            <constraint firstItem="tsS-Ck-rsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="UcP-nM-ySv"/>
+                            <constraint firstItem="YD3-dy-0q4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Yuz-0v-OFw"/>
+                            <constraint firstItem="0gb-eO-F5c" firstAttribute="centerX" secondItem="tsS-Ck-rsD" secondAttribute="centerX" id="a9c-2R-Xj5"/>
+                            <constraint firstItem="tsS-Ck-rsD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aVT-NM-BNz"/>
+                            <constraint firstItem="0gb-eO-F5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="bkD-sZ-8k1"/>
+                            <constraint firstItem="tsS-Ck-rsD" firstAttribute="top" secondItem="DLN-at-lpQ" secondAttribute="bottom" constant="18" id="h5W-ap-w4q"/>
+                            <constraint firstAttribute="trailing" secondItem="DLN-at-lpQ" secondAttribute="trailing" id="hAY-61-fir"/>
+                            <constraint firstItem="YD3-dy-0q4" firstAttribute="top" secondItem="0gb-eO-F5c" secondAttribute="bottom" constant="27" id="jx5-JI-m52"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tsS-Ck-rsD" secondAttribute="trailing" constant="30" id="nUw-6b-N5z"/>
+                            <constraint firstItem="YD3-dy-0q4" firstAttribute="centerX" secondItem="0gb-eO-F5c" secondAttribute="centerX" id="qsR-eT-wgN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="600" height="600"/>
+    </resources>
+</document>
